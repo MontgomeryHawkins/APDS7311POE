@@ -1,0 +1,10 @@
+<div class="jumbotron text-center">
+    <h1>Posts App</h1>
+    <p class="lead">Welcome to the Posts App</p>
+    <div>
+        <a *ngIf="!authService?.loggedIn()" class="btn btn-primary" [routerLink]="['/register']">Register</a> <a *ngIf="!authService?.loggedIn()" class="btn btn-default" [routerLink]="['/login']">Login</a>
+    </div>
+    <div>
+        <a *ngIf="authService?.loggedIn()" class="btn btn-primary" [routerLink]="['/dashboard']">Dashboard</a> 
+    </div>
+</div>

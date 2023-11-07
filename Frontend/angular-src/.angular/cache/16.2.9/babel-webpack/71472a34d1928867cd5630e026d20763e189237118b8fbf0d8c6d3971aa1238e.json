@@ -1,0 +1,1 @@
+{"ast":null,"code":"\"use strict\";\n\n// typeof any so that it we don't have to cast when comparing a result to the error object\nexports.errorObject = {\n  e: {}\n};\n//# sourceMappingURL=errorObject.js.map","map":null,"metadata":{},"sourceType":"script","externalDependencies":[]}

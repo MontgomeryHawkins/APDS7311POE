@@ -1,0 +1,38 @@
+###    Sign Up Request
+POST https://localhost:3000/api/users/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username": "MontgomeryTHawkins",
+    "password": "SecurePassword",
+    "firstname": "Monty",
+    "lastname": "Hawkins"
+}
+###    Log In Request   
+POST https://localhost:3000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "MontgomeryTHawkins",
+    "password": "SecurePassword"
+}
+###    Get All Posts Request
+GET https://localhost:3000/api/posts/all HTTP/1.1
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTI1NTMxZjYyNGIyZmNlNDcxMzM0ZmMiLCJpYXQiOjE2OTcwMTgwMzl9.Y5Y4HNsRuOS5o4WcFoQCrsmhoMlDZSnb4rz9r8K8avU
+### Create Post Request
+POST https://localhost:3000/api/posts/new HTTP/1.1
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTI1NTMxZjYyNGIyZmNlNDcxMzM0ZmMiLCJpYXQiOjE2OTY5NDUwMzZ9.t0_O2axUjbsMdOzt98kB6k53fJ5U5yEov_DJK7ICq88
+content-type: application/json
+
+{
+    "title": "Important",
+    "description": "Second Post",
+    "departmentCode": "TH200"
+} 
+###    Get Post By ID Request 
+GET https://localhost:3000/api/posts/65255441624b2fce47133501 HTTP/1.1
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTI1NTMxZjYyNGIyZmNlNDcxMzM0ZmMiLCJpYXQiOjE2OTY5NDUwMzZ9.t0_O2axUjbsMdOzt98kB6k53fJ5U5yEov_DJK7ICq88
+
+###    Delete Post By ID Request
+DELETE https://localhost:3000/api/posts/65255441624b2fce47133501 HTTP/1.1
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTI1NTMxZjYyNGIyZmNlNDcxMzM0ZmMiLCJpYXQiOjE2OTY5NDUwMzZ9.t0_O2axUjbsMdOzt98kB6k53fJ5U5yEov_DJK7ICq88

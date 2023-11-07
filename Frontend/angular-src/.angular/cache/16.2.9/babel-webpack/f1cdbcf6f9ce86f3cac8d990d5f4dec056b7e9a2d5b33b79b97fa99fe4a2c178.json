@@ -1,0 +1,1 @@
+{"ast":null,"code":"\"use strict\";\n\nexports.empty = {\n  closed: true,\n  next: function (value) {},\n  error: function (err) {\n    throw err;\n  },\n  complete: function () {}\n};\n//# sourceMappingURL=Observer.js.map","map":null,"metadata":{},"sourceType":"script","externalDependencies":[]}
